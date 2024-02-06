@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimple Abirami</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; 
+        }.container {
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }nav {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }nav a {
+            color: #4f4f4f; 
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }.brand {
+            font-weight: bold;
+            color: #4f4f4f;
+        }.nav-right {
+            display: flex;
+        }.nav-right a {
+            margin-left: 20px;
+        }#home {
+            background-color: #000000bb;
+            color: #f4f4f4; 
+        }.icon {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; 
+        }.icon i {
+           color: rgb(219, 190, 213);
+           padding: 0 8px; 
+           font-size: 20px;
+           text-align: center;
+           text-decoration: none;
+        }.icon i:hover {
+            color: white;
+        }#buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }.download-cv {
+            text-align: center;
+        }.download-cv a {
+            text-decoration: none;
+        }.download-cv button {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }.download-cv button:hover {
+            background-color: white;
+            color: #000000bb; 
+        }.contact-me {
+            text-align: center;
+            margin-left: 10px;
+        }.contact-me a {
+            text-decoration: none;
+        }.contact-me button {
+            background-color: rgb(40, 0, 40);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }.contact-me button:hover {
+            background-color: rgb(114, 21, 114);
+        }.content-box {
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            background-color: white;
+        }#home-content {
+            text-align: center;
+            height: 500px;
+            padding-top: 80px;   
+        }#home img {
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }#about {
+            display: flex;
+            justify-content: space-between;
+            clear: both;
+            flex-direction: row;
+            line-height: 1.6;
+            color: #4f4f4f; 
+        }#text{
+            color: #4f4f4f; 
+            max-width: 50%;
+        }#about-left {
+            flex: 2;
+            float: left;
+            max-width: 50%;
+        }#about-right {
+            flex: 1;
+            padding-left: 20px;
+            float: right;
+            box-sizing: border-box; 
+            max-width: 50%;
+        }.pin {
+            width: 50px;
+        }#certifications img ,#education img{
+            display: flex;
+            flex-direction: column; 
+        }#about-right ul {
+            list-style: none; 
+            padding: 0; 
+        }#about-right ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }#about-right ul li i {
+            margin-right: 10px;
+        }.skill_image_left{
+            max-width: 50%;
+            height: 305px;
+            margin-top: -0.2%;
+        }.skill_image_right{
+            max-width: 50%;
+            height: 305px;
+            margin-left: 50%;
+            margin-top: -0.2%;
+        }.project-container {
+            margin: 5vh 0;
+            
+        }.project-website {
+            height: 78vh;
+            width: 64vw;
+        }.project-website-title {
+            padding-left: 5vw;
+            margin: 3vh 0;
+            text-decoration: none;
+        }#education .education-div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; 
+        }#education .education-div img {
+            width: 50px;
+            margin-right: 10px;
+        }#education .education-div .education-details {
+            flex: 2;
+        }#education .education-details h3,#education .education-details p,#education .education-details h3 {
+            margin: 0; 
+            padding: 15px;
+        }#contact{
+            
+            align-items: center;
+            color: #4f4f4f;
+           padding: 50px 8px; 
+           font-size: 20px;
+           text-align: center;
+           text-decoration: none;
+        }
+        #contact i{
+            align-items: center;
+            color: #4f4f4f;
+           padding-right: 10px;
+           font-size: 20px;
+           text-align: center;
+           text-decoration: none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="brand">Dimple Abirami</div>
+            <div class="nav-right">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div class="content-box" id="home" style="background-image: url('bg.jpeg'); background-repeat: no-repeat; background-size: cover;">
+            <div id="home-content">
+                <img src="photo.png" alt="Profile Photo">
+                <h1>Dimple Abirami</h1>
+                <p>Flutter Developer with expertise in Machine Learning and Generative AI</p>
+                <div class="icon">
+                    <a href="https://twitter.com/DimpleAbirami"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/dimple-abirami-376120217/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556017899384"><i class="fab fa-facebook"></i></a>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+                
+                <div id="buttons">
+                    <div class="download-cv">
+                        <a href="CV.pdf" download>
+                            <button>Download CV</button>
+                        </a>
+                    </div>
+                    <div class="contact-me">
+                        <a href="#contact">
+                            <button>Contact Me</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-box" id="about">
+            <div id="about-left">
+                <h2 id="text">About Me</h2>
+                <p>
+                    Hello! I'm Dimple Abirami. I am passionate about Flutter Development and Machine Learning. As a proficient front-end developer, I possess expertise in both Flutter and web development.<br><br> Additionally, I have specialized knowledge in Machine Learning and Generative AI. Alongside my technical skills, I have a keen interest in drawing and designing.</p>
+            </div>
+            <div id="about-right">
+                <h2 id="text">Bio</h2>
+                <ul>
+                    <li><i class="far fa-calendar-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i><strong>Age:</strong> 20</li>
+                    <li><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i><strong>Email:</strong> dimpleabirami@gmail.com</li>
+                    <li><i class="fab fa-linkedin pe-2 text-muted" style="width:24px;opacity:0.85;"></i><strong>LinkedIn:</strong> dimple-abirami</li>
+                    <li><i class="fab fa-github pe-2 text-muted" style="width:24px;opacity:0.85;"></i><strong>Github:</strong> https://github.com/dimple-abirami</li>
+                    <li><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;font-size: 20px;"></i><strong>Address: </strong>61/22, Vannar 2nd Street Mela Shanmugapuram</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="content-box" id="skills">
+            <h1 id="text">Skills</h1>
+            <center><img src="skills.png"></center>
+        </div>
+        
+        <div id="experience">
+        <div class="content-box" id="education" >
+            <h1 id="text">Intern Experience</h1>
+            <div class="education-div">
+                <img src="pin1.png"  style="width: 60px;">
+                <div class="education-details">
+                    <a href="https://tospace.in/"><h3 id="text">@tospace</h3></a>
+                    <p id="text">14/11/2022 - 15/2/2023</p>
+                    <h3 id="text">Low Code App design and Introduction to new ongoing technologies</h3>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="content-box" id="education" style="background-image: url('eduBg.png'); background-repeat: no-repeat; background-size: cover;">
+            <h1 id="text">Education</h1>
+        
+            <div class="education-div">
+                <img src="pin.png" class="pin">
+                <div class="education-details">
+                    <h3 id="text">National Engineering College, Kovilpatti</h3>
+                    <p id="text">BE CSE (Present)</p>
+                    <h3 id="text">CGPA: 8.7 (upto 4th semester)</h3>
+                </div>
+            </div>
+        
+            <div class="education-div">
+                <img src="pin.png" class="pin">
+                <div class="education-details">
+                    <h3 id="text">St.Thomas Matriculation Higher Secondary School Thoothukudi</h3>
+                    <p id="text">HSC 2020</p>
+                    <h3 id="text">Percentage: 90.865%</h3>
+                </div>
+            </div>
+        
+            <div class="education-div">
+                <img src="pin.png" class="pin">
+                <div class="education-details">
+                    <h3 id="text">St.Thomas Matriculation Higher Secondary School Thoothukudi</h3>
+                    <p id="text">SSLC 2018</p>
+                    <h3 id="text">Percentage:91%</h3>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="content-box" id="projects">
+            <h1 id="text">Projects</h1>
+            <div class="row" class="project-container">
+               
+                    <h3 class="project-website-title" >1. Typing Game using JS</h3>
+                
+                <iframe src="https://dimple-abirami.github.io/typing-game" class="project-website"></iframe>
+    
+            </div>
+    
+    
+            <div class="row" class="project-container">
+                 <h3 class="project-website-title" >2. Form Validation using JS</h3>
+                
+                <iframe src="https://dimple-abirami.github.io/form-validation" class="project-website"></iframe>
+    
+            </div>
+    
+    
+            <div class="row" class="project-container">
+               <h3 class="project-website-title">3. Tindog using html,css</h3>
+                <iframe src="https://dimple-abirami.github.io/tindog" class="project-website"></iframe>
+    
+            </div>
+            <div class="row" class="project-container">
+                
+                    <h3 class="project-website-title">4. E-Commerce using JSP</h3>
+                
+                <video class="project-website" autoplay muted loop controls><source src="Project_Demo.mp4" type="video/mp4"></video>
+    
+            </div>
+            <div class="row" class="project-container">
+                <h3 class="project-website-title">5. Task Manager using Flask </h3>
+                <video class="project-website" autoplay muted loop controls>
+                    <source src="TaskManager.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+
+        </div>
+        </div>
+        <div id="certifications">
+        <div class="content-box" id="education"  style="background-image: url('certBg.png'); background-repeat: no-repeat; background-size: cover;">
+            <h1 id="text">Certifications</h1>
+            <div class="education-div">
+                <img src="pin.png" class="pin">
+                <div class="education-details">
+                    <h3 id="text">Machine Learning Specialization</h3>
+                    <a href="https://www.coursera.org/specializations/machine-learning-introduction" style="text-decoration: none;"><p id="text">#BreakIntoAI with Machine Learning Specialization. Master fundamental AI concepts and develop practical machine learning skills in the beginner-friendly, 3-course program by AI visionary Andrew Ng</p></a>
+                    
+                </div>
+            </div>
+            <div class="education-div">
+                <img src="pin.png" class="pin">
+                <div class="education-details">
+                    <h3 id="text">AI For Everyone</h3>
+                    <a href ="https://www.coursera.org/learn/ai-for-everyone/home/info" style="text-decoration: none;"><p id="text">AI is not only for engineers. If you want your organization to become better at using AI, this is the course to tell everyone--especially your non-technical colleagues--to take. </p></a>
+                    
+                </div>
+            </div>
+            <div class="education-div">
+                <img src="pin.png" class="pin">
+                <div class="education-details">
+                    <h3 id="text">Flutter & Dart - The Complete Guide [2024 Edition]</h3>
+                    <a href ="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/" style="text-decoration: none;"><p id="text">A Complete Guide to the Flutter SDK &amp; Flutter Framework for building native iOS and Android apps</p></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"id="contact">
+          
+         
+            <h3>Dimple Abirami</h3>
+            <a href="https://twitter.com/DimpleAbirami"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/dimple-abirami-376120217/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61556017899384"><i class="fab fa-facebook"></i></a>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github"></i>
+            <p><i> © All rights reserved.</i></p>
+        
+    </div>
+    
+</body>
+</html>
+
+        
